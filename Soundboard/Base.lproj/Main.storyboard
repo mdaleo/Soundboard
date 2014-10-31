@@ -54,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="227" y="39"/>
         </scene>
-        <!--View Controller-->
+        <!--New Sound View Controller-->
         <scene sceneID="AAN-EJ-Eq4">
             <objects>
-                <viewController id="np3-6J-AC0" sceneMemberID="viewController">
+                <viewController id="np3-6J-AC0" customClass="NewSoundViewController" customModule="Soundboard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="c2a-Y5-k3Z"/>
                         <viewControllerLayoutGuide type="bottom" id="NOl-du-iC4"/>
@@ -73,8 +73,16 @@
                                 </constraints>
                                 <items>
                                     <navigationItem title="New Sound" id="Ght-bN-NYh">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="UqN-uE-exA"/>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="s5m-ux-awh"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="UqN-uE-exA">
+                                            <connections>
+                                                <action selector="cancelTapped:" destination="np3-6J-AC0" id="xvb-8g-mde"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="s5m-ux-awh">
+                                            <connections>
+                                                <action selector="saveTapped:" destination="np3-6J-AC0" id="May-SX-Rtc"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>

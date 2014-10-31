@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import AVFoundation
 
 class SoundListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    var audioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +29,13 @@ class SoundListViewController: UIViewController, UITableViewDataSource, UITableV
         var cell = UITableViewCell()
         cell.textLabel.text = "BRUH"
         return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        var soundPath = NSBundle.mainBundle().pathForResource("thumpy", ofType: "m4a")
+        var soundURL = NSURL.fileURLWithPath(soundPath!)
+        self.audioPlayer = AVAudioPlayer(contentsOfURL: soundURL, error: nil)
+        self.audioPlayer.play()
     }
 
 

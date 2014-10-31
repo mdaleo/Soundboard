@@ -14,6 +14,7 @@
 		1D1C01E21A03C6B40052BA76 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D1C01E11A03C6B40052BA76 /* Images.xcassets */; };
 		1D1C01E51A03C6B40052BA76 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D1C01E31A03C6B40052BA76 /* LaunchScreen.xib */; };
 		1D1C01F11A03C6B40052BA76 /* SoundboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1C01F01A03C6B40052BA76 /* SoundboardTests.swift */; };
+		1D1C01FB1A03D1D40052BA76 /* thumpy.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1D1C01FA1A03D1D40052BA76 /* thumpy.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		1D1C01EA1A03C6B40052BA76 /* SoundboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D1C01EF1A03C6B40052BA76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D1C01F01A03C6B40052BA76 /* SoundboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundboardTests.swift; sourceTree = "<group>"; };
+		1D1C01FA1A03D1D40052BA76 /* thumpy.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = thumpy.m4a; path = ../../../../../Documents/thumpy.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		1D1C01D41A03C6B40052BA76 /* Soundboard */ = {
 			isa = PBXGroup;
 			children = (
+				1D1C01FA1A03D1D40052BA76 /* thumpy.m4a */,
 				1D1C01D71A03C6B40052BA76 /* AppDelegate.swift */,
 				1D1C01DC1A03C6B40052BA76 /* SoundListViewController.swift */,
 				1D1C01DE1A03C6B40052BA76 /* Main.storyboard */,
@@ -196,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D1C01E01A03C6B40052BA76 /* Main.storyboard in Resources */,
+				1D1C01FB1A03D1D40052BA76 /* thumpy.m4a in Resources */,
 				1D1C01E51A03C6B40052BA76 /* LaunchScreen.xib in Resources */,
 				1D1C01E21A03C6B40052BA76 /* Images.xcassets in Resources */,
 			);

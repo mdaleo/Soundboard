@@ -39,7 +39,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Soundboard" id="Ntk-OI-YJP"/>
+                    <navigationItem key="navigationItem" title="Soundboard" id="Ntk-OI-YJP">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="PYW-J3-Z5W">
+                            <connections>
+                                <segue destination="np3-6J-AC0" kind="presentation" id="dHM-bs-oYz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="pJQ-eA-TWo" id="SUg-c3-BMn"/>
                     </connections>
@@ -47,6 +53,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="227" y="39"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AAN-EJ-Eq4">
+            <objects>
+                <viewController id="np3-6J-AC0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c2a-Y5-k3Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="NOl-du-iC4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GNv-g9-zbX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hna-i1-DSO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="GOg-fe-XBg"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="New Sound" id="Ght-bN-NYh">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="UqN-uE-exA"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="s5m-ux-awh"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter sound name here lol" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kff-vc-5al">
+                                <rect key="frame" x="20" y="64" width="560" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hfH-PI-dpa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DtI-EA-wsb">
+                                <rect key="frame" x="20" y="124" width="560" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2NQ-mb-eHG"/>
+                                </constraints>
+                                <state key="normal" title="RECORD">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hna-i1-DSO" firstAttribute="leading" secondItem="GNv-g9-zbX" secondAttribute="leading" id="7fz-Hh-Nqn"/>
+                            <constraint firstAttribute="trailing" secondItem="DtI-EA-wsb" secondAttribute="trailing" constant="20" id="R4s-mM-PrV"/>
+                            <constraint firstItem="DtI-EA-wsb" firstAttribute="top" secondItem="kff-vc-5al" secondAttribute="bottom" constant="30" id="cbH-YE-Z9h"/>
+                            <constraint firstItem="kff-vc-5al" firstAttribute="top" secondItem="hna-i1-DSO" secondAttribute="bottom" constant="20" id="fb3-nj-FMt"/>
+                            <constraint firstItem="kff-vc-5al" firstAttribute="leading" secondItem="GNv-g9-zbX" secondAttribute="leading" constant="20" id="fck-JA-fcK"/>
+                            <constraint firstAttribute="trailing" secondItem="kff-vc-5al" secondAttribute="trailing" constant="20" id="oAE-AP-0EH"/>
+                            <constraint firstItem="DtI-EA-wsb" firstAttribute="leading" secondItem="GNv-g9-zbX" secondAttribute="leading" constant="20" id="pa4-Ji-yLb"/>
+                            <constraint firstAttribute="trailing" secondItem="hna-i1-DSO" secondAttribute="trailing" id="w77-6q-fet"/>
+                            <constraint firstItem="hna-i1-DSO" firstAttribute="top" secondItem="GNv-g9-zbX" secondAttribute="top" id="wV3-tV-Ud5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P2W-i2-8xj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839" y="38"/>
         </scene>
     </scenes>
 </document>
